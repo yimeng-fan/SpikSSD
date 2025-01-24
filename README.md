@@ -13,7 +13,7 @@ To evaluate or train SpikSSD you will need to download the datasets:
 |    Dataset Name    |                             Link                             |
 | :----------------: | :----------------------------------------------------------: |
 | PASCAL VOC Dataset | [Download PASCAL VOC Detection Dataset](http://host.robots.ox.ac.uk/pascal/VOC/) |
-| COCO Dataset | [Download COCO Detection Dataset]([http://host.robots.ox.ac.uk/pascal/VOC/](https://cocodataset.org/#download)) |
+| COCO Dataset | [Download COCO Detection Dataset](https://cocodataset.org/#download) |
 | GEN1 Dataset | [Download Gen1 Automotive Detection Dataset](https://www.prophesee.ai/2020/01/24/prophesee-gen1-automotive-detection-dataset/) |
 
 ## Training

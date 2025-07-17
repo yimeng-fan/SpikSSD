@@ -1,10 +1,39 @@
-#                           SpikSSD: Better Extraction and Fusion for Object Detection with Spiking Neuron Networks
+# 🚨 Important Update Notice
 
-![Optional image alt text](figure.jpg)
+We have made **significant revisions and improvements** to our early version paper **SpikSSD**. The updated paper has been published on arXiv:
+
+📄 **[SpikeDet: Better Firing Patterns for Accurate and Energy-Efficient Object Detection with Spiking Neuron Networks](https://arxiv.org/abs/2501.15151)**
+
+## 🔥 Major Improvements
+
+### 1. **Theoretical Enhancement**
+
+- More comprehensive analysis of how neuron firing patterns affect object detection
+- Corrections to errors in the previous version
+
+### 2. **Methodological Upgrades**
+
+Comprehensive improvements to our approach based on the original ideas:
+
+- Optimizing neuron firing patterns by treating the entire model **as a whole**, solving local firing saturation issues, and proposing the **SpikeDet** model - currently the best model in terms of accuracy and energy efficiency trade-off
+- Further development of **MDS-ResNet** leading to the proposed **MDSNet** backbone
+- Introduction of **SMFM** based on analysis of how feature fusion modules affect neuron firing patterns
+
+### 3. **Performance Improvements**
+
+Through advanced network architectures, improved training pipelines, and engineering optimizations:
+
+#### 📊 Key Results:
+
+- **COCO 2017 dataset**: `51.4% AP`, outperforming previous SNN-based methods by `2.5% AP` while requiring only **half the power consumption**
+- **GEN1 event-based dataset**: `47.6% AP`, outperforming previous SNN-based methods by `7.2% AP` with better energy efficiency
+- **URPC 2019 underwater dataset**: `50.1% AP` with only `5.5mJ` energy consumption
+
+------
+
+> **Note**: This represents a major evolution from our initial SpikSSD work. We recommend referring to the updated SpikeDet paper for the most current and accurate information about our approach. This repository will be deleted after our new version repository is updated.
 
 
-
-This is the official implementation of the 'SpikSSD: Better Extraction and Fusion for Object Detection with Spiking Neuron Networks' .
 
 ## Required Data
 
@@ -12,9 +41,8 @@ To evaluate or train SpikSSD you will need to download the datasets:
 
 |    Dataset Name    |                             Link                             |
 | :----------------: | :----------------------------------------------------------: |
-| PASCAL VOC Dataset | [Download PASCAL VOC Detection Dataset](http://host.robots.ox.ac.uk/pascal/VOC/) |
-| COCO Dataset | [Download COCO Detection Dataset](https://cocodataset.org/#download) |
-| GEN1 Dataset | [Download Gen1 Automotive Detection Dataset](https://www.prophesee.ai/2020/01/24/prophesee-gen1-automotive-detection-dataset/) |
+| PASCAL VOC Dataset | [Download PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) |
+|    GEN1 Dataset    | [Download Gen1 Automotive Detection Dataset](https://www.prophesee.ai/2020/01/24/prophesee-gen1-automotive-detection-dataset/) |
 
 ## Training
 
